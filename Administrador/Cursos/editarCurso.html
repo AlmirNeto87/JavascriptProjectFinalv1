@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edição de Curso</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Editar Curso</h2>
+
+    <form id="form-edicao-curso">
+
+      <input type="hidden" name="id-curso-edit" id="id-curso-edit" value="">
+
+      <label for="nome-curso-edit">Nome</label>
+      <input type="text" name="nome-curso-edit" id="nome-curso-edit" required value="">
+
+      <label for="descricao-curso-edit">Descrição</label>
+      <input type="text" name="descricao-curso-edit" id="descricao-curso-edit" required value="">
+
+      <button type="submit" id="btn-salvar-edicao">Salvar Alterações</button>
+                
+    </form>
+
+    <div class="extra-links">
+      <a href="./listarCursos.html">Cancelar</a>
+    </div>
+
+  </div>
+
+  <script src="../../js/Administrador/segurancaAdmin.js"></script>
+  <script src="../../js/Administrador/Cursos/gerenciamentoCurso.js"></script>
+
+</body>
+
+
+</html>

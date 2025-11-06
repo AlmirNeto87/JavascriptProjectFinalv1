@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Turmas</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edição de Turma</h2>
+        <form id="form-edicao-turma"> 
+            
+            <input type="hidden" name="id-turma-edit" id="id-turma-edit" value="">
+            
+            <label for="nome-turma-edit">Nome da Turma</label>
+            <input type="text" name="nome-turma-edit" id="nome-turma-edit" required value="">
+            
+            <label for="ano-turma-edit">Ano</label>
+            <input type="text" name="ano-turma-edit" id="ano-turma-edit" required value="">
+            
+            <label for="curso-turma-edit">Curso Associado</label>
+            <select name="curso-turma-edit" id="curso-turma-edit" required>
+                <option value="" disabled selected>Carregando Cursos...</option>
+            </select>
+            
+            <label for="turno-turma-edit">Turno</label>
+            <select name="turno-turma-edit" id="turno-turma-edit" required>
+                <option value="" disabled selected>Selecione o Turno</option>
+                <option value="Manha">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+                <option value="Integral">Integral</option>
+            </select>
+
+            <button type="submit" id="btn-salvar-edicao">Salvar Alterações</button>
+            
+        </form>
+
+        <div class="extra-links">
+            <a href="./listarTurmas.html">Cancelar</a>
+        </div>
+
+    </div>
+
+    <script src="../../js/Administrador/segurancaAdmin.js"></script>
+    <script src="../../js/Administrador/Turmas/gerenciamentoTurma.js"></script>
+
+</body>
+
+</html>

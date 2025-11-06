@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Home</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/admin.css"> 
+  </head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            
+            <div class="nav-links">
+                <a href="./cadastro.html" class="option-btn" style="width: auto;">Cadastrar Admin</a>
+                
+                <button class="option-btn" id="btnLogout" style="width: auto;">Sair</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container home-box">
+        <h1 id="welcome-message">Bem-vindo(a), Administrador!</h1> 
+        <p>Selecione o módulo que deseja gerenciar:</p>
+
+        <div class="options"> 
+            
+            <a href="Alunos/listarAlunos.html" class="option-btn">
+                Gerenciar Alunos
+            </a>
+            
+            <a href="Turmas/listarTurmas.html" class="option-btn">
+                Gerenciar Turmas
+            </a>
+            
+            <a href="Cursos/listarCursos.html" class="option-btn">
+                Gerenciar Cursos
+            </a>
+
+        </div>
+    </div>
+
+    <script src="../js/Administrador/segurancaAdmin.js"></script>
+    <script src="../js/Administrador/home.js"></script> 
+    
+</body>
+
+</html>

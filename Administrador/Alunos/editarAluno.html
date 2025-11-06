@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Alunos</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+
+    <div class="container">
+      <h2>Edição de Alunos</h2>
+ 
+      <form id="form-edicao-aluno"> 
+
+        <input type="hidden" name="matricula-aluno-edit" id="matricula-aluno-edit" value="">
+          
+        <label for="nome-aluno-edit">Nome</label>
+        <input type="text" name="nome-aluno-edit" id="nome-aluno-edit" required value="">
+            
+        <label for="cpf-aluno-edit">Cpf</label>
+        <input type="text" name="cpf-aluno-edit" id="cpf-aluno-edit" readonly required value="">
+            
+        <label for="idade-aluno-edit">Idade</label>
+        <input type="text" name="idade-aluno-edit" id="idade-aluno-edit" required value="">
+
+        <label for="curso-aluno-edit">Curso Principal</label>
+        <select name="curso-aluno-edit" id="curso-aluno-edit" required>
+            <option value="" disabled selected></option>
+        </select>
+
+        <button type="submit" id="btn-salvar-edicao">Salvar Alterações</button>
+                    
+      </form>
+
+      <div class="extra-links">
+        <a href="./listarAlunos.html">Cancelar</a>
+      </div>
+
+    </div>
+
+    <script src="../../js/Administrador/segurancaAdmin.js"></script>
+    <script src="../../js/Administrador/Alunos/gerenciamentoAluno.js"></script>
+    
+</body>
+
+</html>

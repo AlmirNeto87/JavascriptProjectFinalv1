@@ -1,0 +1,224 @@
+/* Este arquivo contém estilos ESPECÍFICOS para as páginas da área do aluno. */
+
+/* ===== TÍTULO DO CONTAINER ===== */
+.container h2 {
+  margin-bottom: 2rem; /* Aumenta o espaço abaixo do título */
+  color: #343a40;
+  font-size: 1.8rem;
+}
+
+/* ===== FORMULÁRIO ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: top; /* Alinha o texto do formulário à esquerda */
+}
+
+/* ===== GRUPO DO FORMULÁRIO (LABEL + INPUT) ===== */
+.form-group {
+  margin-bottom: 1.2rem; /* Espaço entre os campos de input */
+}
+
+/* ===== LABEL ===== */
+label {
+  display: block; /* Garante que a label ocupe sua própria linha */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+/* ===== INPUT ===== */
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s; /* Adiciona transição suave */
+}
+
+/* Efeito de foco para melhor experiência do usuário */
+input[type="text"]:focus {
+  outline: none; /* Remove a borda padrão do navegador */
+  border-color: #4c6ef5; /* Muda a cor da borda para a cor primária */
+  box-shadow: 0 0 0 3px rgba(76, 110, 245, 0.25); /* Adiciona um brilho sutil */
+}
+
+/* ===== BOTÃO DE SUBMIT ===== */
+form button {
+  width: 100%; /* Botão ocupa toda a largura do formulário */
+  padding: 0.9rem;
+  margin-top: 1rem; /* Espaço acima do botão */
+  font-size: 1.1rem;
+}
+
+/* ==================================== */
+/* ===== ESTILOS DE NAVEGAÇÃO / MENU ALUNO (HOME) ===== */
+/* ==================================== */
+
+.menu-aluno {
+    display: flex;
+    gap: 30px; /* Espaço entre os cartões de opção */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Garante que os itens quebrem a linha em telas pequenas */
+}
+
+.menu-aluno .option-btn {
+    /* Faz o cartão de opção se destacar */
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(76, 110, 245, 0.9) ;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.menu-aluno .option-btn:hover {
+    transform: translateY(-5px); /* Efeito de levantar */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-aluno h3 {
+    margin-top: 0;
+    color: #ffffff; /* Cor primária para o título */
+    font-size: 1.5rem;
+}
+
+.menu-aluno p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+
+/* ==================================== */
+/* ===== ESTILOS DA BARRA DE TOPO (HEADER/NAVBAR) ===== */
+/* ==================================== */
+
+header {
+    /* Garante que o header ocupe toda a largura */
+    width: 100%; 
+    /* Coloca o header no topo da tela, fora do fluxo principal */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    /* Adiciona uma cor de fundo que combine com o gradiente do body, mas com opacidade */
+    background-color: rgba(76, 110, 245, 0.9); /* Azul primário com transparência */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.navbar {
+    display: flex;
+    /* Alinha o título e os links nas extremidades */
+    justify-content: space-between; 
+    align-items: center;
+    /* Limita a largura da navbar, alinhando-a com o restante do conteúdo */
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 0 20px; /* Preenchimento lateral */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 30px; /* Espaço entre os links/botões */
+    
+        
+}
+
+/* Garante que o botão 'Sair' e o link 'Cadastrar Admin' dentro da nav fiquem brancos */
+.nav-links .option-btn, .nav-links button {
+    background: transparent; /* Remove o fundo para ser mais discreto no header */
+    border: 2px solid rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+}
+
+.nav-links .option-btn:hover, .nav-links button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Fundo suave ao passar o mouse */
+    transform: none; /* Remove o efeito de levantar para navbar */
+}
+
+/* ===== TABELA DE DETALHES DO ALUNO ===== */
+.tabela-detalhes {
+    width: 100%;
+    max-width: 500px; /* Limita a largura para melhor leitura */
+    margin: 30px 0 30px auto; /* Centraliza */
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tabela-detalhes th, .tabela-detalhes td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.tabela-detalhes th {
+    background-color: #f8f9fa; /* Fundo leve para o título */
+    text-align: right; /* Alinha o título do campo à direita */
+    width: 35%;
+    font-weight: 700;
+    color: #495057;
+}
+
+.tabela-detalhes td {
+    background-color: #ffffff;
+    font-weight: 500;
+    color: #212529;
+}
+
+/* Destacar linhas pares */
+.tabela-detalhes tbody tr:nth-child(even) th {
+    background-color: #f1f3f5;
+}
+
+/* ==================================== */
+/* ===== ESTILOS DE TABELA (LISTAGEM DE TURMAS) ===== */
+/* ==================================== */
+
+/* Tabela de Turmas Disponíveis (usando a nova classe .tabela-turmas) */
+.tabela-turmas {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+}
+
+.tabela-turmas th, .tabela-turmas td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.tabela-turmas thead th {
+    background-color: #4c6ef5; /* Cor primária */
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tabela-turmas tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Fundo cinza claro para linhas pares */
+}
+
+.tabela-turmas tbody tr:hover {
+    background-color: #f1f3f5; /* Destaca ao passar o mouse */
+}
+
+/* Estilo para o botão "Inscrito" */
+.btn-inscrito {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: default;
+    opacity: 0.7;
+}

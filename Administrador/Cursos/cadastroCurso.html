@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuarios </title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+  <header>
+        <nav class="navbar container">
+            
+            <div class="nav-links">
+                <a href="../Home.html" class="option-btn" style="width: auto;">Home</a>
+            </div>
+        </nav>
+  </header>
+
+    <div class="container">
+      <h2>Cadastro de Curso </h2>
+      
+      <form id="form-cadastro">
+           
+        <label for="nome-curso-cad">Nome</label>
+        <input type="text" name="nome-curso-cad" id="nome-curso-cad" required>
+    
+        <label for="descricao-curso-cad">Descricao</label>
+        <input type="text" name="descricao-curso-cad" id="descricao-curso-cad" required>
+      
+        <button type="submit" id="btn-salvar-cad">Salvar Curso</button>
+      
+      </form>
+    </div>
+
+    <script src="../../js/Administrador/segurancaAdmin.js"></script>
+    <script src="../../js/Administrador/Cursos/gerenciamentoCurso.js"></script>
+    
+</body>
+
+</html>

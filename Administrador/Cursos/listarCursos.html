@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Cursos - Admin</title>
+    
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/admin.css">
+</head>
+<body>
+
+    <div class="container-lista"> 
+        
+        <div class="lista-header">
+            <h1>Lista e Gerenciamento de Cursos</h1>
+            <a href="../home.html" class="option-btn" style="width: auto; margin-top: 0;">Voltar para Home</a>
+        </div>
+        
+        <a href="./cadastroCurso.html" class="btn-adicionar">
+            + Cadastrar Novo Curso
+        </a>
+
+        <table class="tabela-alunos"> <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Curso</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-cursos-body">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="../../js/Administrador/segurancaAdmin.js"></script>
+    <script src="../../js/Administrador/Cursos/gerenciamentoCurso.js"></script>
+    
+</body>
+</html>

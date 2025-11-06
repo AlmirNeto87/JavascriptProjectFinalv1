@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Dados - Aluno</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/aluno.css"> 
+</head>
+<body>
+
+    <script src="../js/Aluno/segurancaAluno.js"></script> 
+    
+    <header>
+        <nav class="navbar container">
+                     
+            <div class="nav-links">
+                <a href="homeAluno.html" class="option-btn">Home</a>
+                <button id="btnLogoutAluno" class="btn-info">Sair</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Meus Dados Cadastrais</h2>
+        <p>Aqui estão as suas informações registradas no sistema. Se precisar de alguma alteração, entre em contato com a Secretaria.</p>
+        
+        <table class="tabela-detalhes">
+            <tbody>
+                <tr>
+                    <th>Matrícula:</th>
+                    <td id="matricula-aluno-dados">Carregando...</td>
+                </tr>
+                <tr>
+                    <th>Nome Completo:</th>
+                    <td id="nome-aluno-dados">Carregando...</td>
+                </tr>
+                <tr>
+                    <th>CPF:</th>
+                    <td id="cpf-aluno-dados">Carregando...</td>
+                </tr>
+                <tr>
+                    <th>Idade:</th>
+                    <td id="idade-aluno-dados">Carregando...</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        </div>
+
+    <script src="../js/Aluno/dadosAluno.js"></script>
+    <script src="../js/Aluno/homeAluno.js"></script> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cadastro de Alunos </title>
+ <link rel="stylesheet" href="../../css/style.css">
+ <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+  <script src="../../js/Administrador/segurancaAdmin.js"></script>
+
+  <header>
+        <nav class="navbar container">
+            
+            <div class="nav-links">
+                <a href="../Home.html" class="option-btn" style="width: auto;">Home</a>
+            </div>
+        </nav>
+  </header>
+
+  <div class="container">
+    
+
+    <h2>Cadastro de Alunos </h2>
+    
+    <form id="form-cadastro">
+
+      <label for="nome-aluno-cad">Nome</label>
+      <input type="text" name="nome-aluno-cad" id="nome-aluno-cad" required>
+      
+      <label for="cpf-aluno-cad">Cpf</label>
+      <input type="text" name="cpf-aluno-cad" id="cpf-aluno-cad" required>
+      
+      <label for="idade-aluno-cad">Idade</label>
+      <input type="text" name="idade-aluno-cad" id="idade-aluno-cad" required>
+
+      <label for="curso-aluno-cad">Curso Principal</label>
+      <select name="curso-aluno-cad" id="curso-aluno-cad" required>
+        <option value="" disabled selected>Carregando Cursos...</option>
+      </select>
+      
+      <button type="submit" id="btn-salvar-cad">Salvar Aluno</button>
+  
+    </form>
+  </div>
+
+  <script src="../../js/Administrador/Alunos/gerenciamentoAluno.js"></script> 
+
+</body>
+</html>

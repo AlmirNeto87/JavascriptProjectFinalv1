@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuarios </title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+  <header>
+        <nav class="navbar container">
+            
+            <div class="nav-links">
+                <a href="../Home.html" class="option-btn" style="width: auto;">Home</a>
+            </div>
+        </nav>
+  </header>
+
+
+    <div class="container">
+      <h2>Cadastro de Turma </h2>
+      <form id="form-cadastro">
+      
+      <label for="nome-turma-cad">Nome da Turma</label>
+      <input type="text" name="nome-turma-cad" id="nome-turma-cad" required>
+      
+      <label for="ano-turma-cad">Ano da Turma</label>
+      <input type="text" name="ano-turma-cad" id="ano-turma-cad" required>
+      
+      <label for="turno-turma-cad">Turno da Turma</label>
+      <select name="turno-turma-cad" id="turno-turma-cad" required>
+        <option value="" disabled selected>Selecione o Turno</option>
+        <option value="Manha">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+        <option value="Integral">Integral</option>
+      </select>
+
+      <label for="curso-turma-cad">Curso Associado</label>
+      <select name="curso-turma-cad" id="curso-turma-cad" required>
+        <option value="" disabled selected>Carregando Cursos...</option>
+      </select>
+
+      <button type="submit" id="btn-salvar-cad">Salvar Turma</button>
+      </form>
+    
+    </div>
+
+    <script src="../../js/Administrador/segurancaAdmin.js"></script>
+    <script src="../../js/Administrador/Turmas/gerenciamentoTurma.js"></script>
+
+</body> 
+
+
+</html>

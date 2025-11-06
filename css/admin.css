@@ -1,0 +1,218 @@
+/* Este arquivo contém estilos ESPECÍFICOS para as páginas da área do aluno. */
+
+/* ===== TÍTULO DO CONTAINER ===== */
+.container h2 {
+  margin-bottom: 2rem; /* Aumenta o espaço abaixo do título */
+  color: #343a40;
+  font-size: 1.8rem;
+}
+
+/* ===== FORMULÁRIO ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: top; /* Alinha o texto do formulário à esquerda */
+}
+
+/* ===== GRUPO DO FORMULÁRIO (LABEL + INPUT) ===== */
+.form-group {
+  margin-bottom: 1.2rem; /* Espaço entre os campos de input */
+}
+
+/* ===== LABEL ===== */
+label {
+  display: block; /* Garante que a label ocupe sua própria linha */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+/* ===== INPUT, SELECT ===== */
+input, select{
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s; /* Adiciona transição suave */
+  
+  /* Estilo adicional para select para remover a aparência padrão (opcional) */
+  appearance: none; 
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(76, 110, 245)" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+
+}
+
+/* Efeito de foco para melhor experiência do usuário */
+input:focus , select:focus {
+  outline: none; /* Remove a borda padrão do navegador */
+  border-color: #4c6ef5; /* Muda a cor da borda para a cor primária */
+  box-shadow: 0 0 0 3px rgba(76, 110, 245, 0.25); /* Adiciona um brilho sutil */
+}
+
+/* ==================================== */
+/* ===== ESTILOS DE LISTAGEM GERALS ===== */
+/* ==================================== */
+
+/* Ajusta o container para telas largas para listar (se for necessário) */
+/* O style.css limita a 450px, precisamos flexibilizar para a tabela. */
+.container-lista {
+    max-width: 1100px; /* Aumenta a largura para acomodar a tabela */
+    width: 95%; /* Garante que funcione bem em telas menores também */
+    /* Remove as propriedades de centralização do 'body' do style.css para a lista */
+    margin: 30px auto; 
+    padding: 2.5rem 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    text-align: left; /* Alinhamento geral do conteúdo */
+}
+
+/* Tabela de Listagem */
+.tabela-alunos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave para destacar a tabela */
+}
+
+.tabela-alunos th, .tabela-alunos td {
+    border: 1px solid #e9ecef; /* Borda mais suave */
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabela-alunos th {
+    background-color: #f8f9fa; /* Fundo do cabeçalho bem claro */
+    color: #495057;
+    font-weight: 700;
+}
+
+.tabela-alunos tr:nth-child(even) {
+    background-color: #fefefe; /* Fundo branco para linhas pares */
+}
+
+/* Efeito ao passar o mouse sobre a linha */
+.tabela-alunos tr:hover {
+    background-color: #e9efff; /* Cor suave para interatividade */
+}
+
+/* Botões de Ação na Tabela */
+.btn-acao {
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+/* Cores baseadas no seu tema (azul #4c6ef5) e cores padrão de ação */
+.btn-editar {
+    background-color: #17a2b8; /* Ciano/Info */
+    color: white;
+}
+
+.btn-deletar {
+    background-color: #dc3545; /* Vermelho/Perigo */
+    color: white;
+}
+
+.btn-acao:hover {
+    opacity: 0.9;
+}
+
+/* Botão de "Adicionar Novo Aluno" */
+.btn-adicionar {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #28a745; /* Verde/Sucesso */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-adicionar:hover {
+    background-color: #218838;
+}
+
+/* Título e Botão Voltar */
+.lista-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lista-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+
+
+/* ===== BOTÃO DE SUBMIT ===== */
+form button {
+  width: 100%; /* Botão ocupa toda a largura do formulário */
+  padding: 0.9rem;
+  margin-top: 1rem; /* Espaço acima do botão */
+  font-size: 1.1rem;
+}
+
+
+/* ==================================== */
+/* ===== ESTILOS DA BARRA DE TOPO (HEADER/NAVBAR) ===== */
+/* ==================================== */
+
+header {
+    /* Garante que o header ocupe toda a largura */
+    width: 100%; 
+    /* Coloca o header no topo da tela, fora do fluxo principal */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    /* Adiciona uma cor de fundo que combine com o gradiente do body, mas com opacidade */
+    background-color: rgba(76, 110, 245, 0.9); /* Azul primário com transparência */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.navbar {
+    display: flex;
+    /* Alinha o título e os links nas extremidades */
+    justify-content: space-between; 
+    align-items: center;
+    /* Limita a largura da navbar, alinhando-a com o restante do conteúdo */
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 0 20px; /* Preenchimento lateral */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Espaço entre os links/botões */
+    
+        
+}
+
+/* Garante que o botão 'Sair' e o link 'Cadastrar Admin' dentro da nav fiquem brancos */
+.nav-links .option-btn, .nav-links button {
+    background: transparent; /* Remove o fundo para ser mais discreto no header */
+    border: 2px solid rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+}
+
+.nav-links .option-btn:hover, .nav-links button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Fundo suave ao passar o mouse */
+    transform: none; /* Remove o efeito de levantar para navbar */
+}

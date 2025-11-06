@@ -1,0 +1,64 @@
+
+
+/* Garantir que o corpo tenha uma cor de fundo clara e centralize o conteúdo */
+body {
+    background-color: #f8f9fa; /* Cinza bem claro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container principal da mensagem de erro */
+.error-container {
+    max-width: 600px;
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    /* Sombra suave e marcante */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+/* Título de Erro (404/Código) */
+.error-container h1 {
+    font-size: 3.5rem;
+    color: #dc3545; /* Vermelho forte para indicar erro/perigo */
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
+/* Subtítulo da Mensagem */
+.error-container h2 {
+    font-size: 1.6rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+/* Parágrafo com instruções */
+.error-container p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+/* Estilo do botão/link de volta */
+.btn-voltar { 
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4c6ef5; /* Seu azul primário */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-voltar:hover {
+    background-color: #3b5bdb;
+    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+}

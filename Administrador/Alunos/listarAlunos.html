@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Alunos - Admin</title>
+    
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/admin.css">
+    
+</head>
+<body>
+
+    <script src="../../js/Administrador/segurancaAdmin.js"></script>
+
+    <div class="container-lista"> 
+        
+        <div class="lista-header">
+            <h1>Lista e Gerenciamento de Alunos</h1>
+            <a href="../home.html" class="option-btn" style="width: auto; margin-top: 0;">Voltar para Home</a>
+        </div>
+        
+        <a href="./cadastroAluno.html" class="btn-adicionar">
+            + Cadastrar Novo Aluno
+        </a>
+
+        <div class="filtros-container" style="display: flex; gap: 20px; margin-bottom: 20px;">
+            
+            <div class="form-group">
+                <label for="curso-aluno-filtro-nome">Pesquisar por Curso:</label>
+                <input type="text" id="curso-aluno-filtro-nome" placeholder="Digite o nome do curso" class="input-filtro">
+            </div>
+
+            <div class="form-group">
+                <label for="turma-aluno-filtro-nome">Pesquisar por Turma:</label>
+                <input type="text" id="turma-aluno-filtro-nome" placeholder="Digite o nome da turma" class="input-filtro">
+            </div>
+            
+        </div>
+        <table class="tabela-alunos">
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>CPF</th>
+                    <th>Curso</th>
+                    <th>Turmas Inscritas</th> <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-alunos-body">
+                </tbody>
+        </table>
+    </div>
+
+    
+    <script src="../../js/Administrador/Alunos/gerenciamentoAluno.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4c6ef5, #15aabf);
+}
+
+
+/* ===== CONTAINER GERAL ===== */
+.container {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Estilização específica para a página inicial */
+.index-box h1 {
+  margin-bottom: 0.75rem; /* Adiciona espaço abaixo do título */
+  font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+  color: #333;
+}
+
+.index-box p {
+  margin-bottom: 2rem; /* Adiciona um espaço maior antes dos botões */
+  color: #666;
+}
+
+/* Container dos botões de opção */
+.options {
+  display: flex;
+  flex-direction: column; /* Coloca os botões um abaixo do outro */
+  gap: 1rem; /* Espaçamento entre os botões */
+}
+
+/* ===== BOTOES ===== */
+button, .option-btn {
+  padding: 0.8rem 1rem;
+  background: #4c6ef5;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Adiciona transição para o transform */
+  display: block; /* Garante que o link ocupe a largura total se necessário */
+}
+
+button:hover, .option-btn:hover {
+  background: #364fc7;
+  transform: translateY(-3px); /* Efeito de "levantar" ao passar o mouse */
+}
+
+/* ===== LINKS (Estilo genérico, caso adicione outros) ===== */
+a {
+  color: #4c6ef5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
